@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Architectural concepts, residential projects, and thoughtful spaces by Atelier North.">
+  <title>Atelier North — Architectural Bureau</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="Atelier North home">AN<span>.</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+    <a class="header-cta" href="#contacts">Start a project <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image" role="img" aria-label="Modern concrete house surrounded by trees"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light">ARCHITECTURE · INTERIORS · LANDSCAPE</p>
+        <h1>Designing Space<br>for <em>Living.</em></h1>
+        <p class="hero-copy">We create thoughtful places where natural materials, light, and everyday life meet.</p>
+        <a class="button button-light" href="#projects">Explore our projects <span>↓</span></a>
+      </div>
+      <div class="hero-meta"><span>ALMATY · WORKING WORLDWIDE</span><span>EST. 2016</span></div>
+    </section>
+
+    <section class="intro section-wrap" id="philosophy">
+      <div>
+        <p class="eyebrow">01 / OUR PHILOSOPHY</p>
+        <h2>Good architecture<br>makes room for <em>life.</em></h2>
+      </div>
+      <p class="intro-copy">Every project begins with listening. We study the landscape, understand the people who will use the space, and shape a clear concept that feels both enduring and personal.</p>
+    </section>
+
+    <section class="projects section-wrap" id="projects">
+      <div class="section-heading">
+        <div><p class="eyebrow">02 / SELECTED WORK</p><h2>Spaces with <em>purpose.</em></h2></div>
+        <p>A selection of homes and places designed around their setting.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-large">
+          <div class="project-photo photo-one"><span class="project-index">01</span></div>
+          <div class="project-info"><div><h3>Courtyard House</h3><p>Private residence · Almaty, Kazakhstan</p></div><span class="project-arrow">↗</span></div>
+          <div class="project-stats"><span>AREA <b>320 m²</b></span><span>YEAR <b>2025</b></span><span>LOCATION <b>Almaty</b></span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-photo photo-two"><span class="project-index">02</span></div>
+          <div class="project-info"><div><h3>Hillside Retreat</h3><p>Country home · Medeu</p></div><span class="project-arrow">↗</span></div>
+          <div class="project-stats"><span>AREA <b>185 m²</b></span><span>YEAR <b>2024</b></span><span>LOCATION <b>Medeu</b></span></div>
+        </article>
+        <article class="project-card">
+          <div class="project-photo photo-three"><span class="project-index">03</span></div>
+          <div class="project-info"><div><h3>Stone & Light</h3><p>Residential interior · Astana</p></div><span class="project-arrow">↗</span></div>
+          <div class="project-stats"><span>AREA <b>142 m²</b></span><span>YEAR <b>2023</b></span><span>LOCATION <b>Astana</b></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services section-wrap" id="services">
+      <div class="section-heading"><div><p class="eyebrow">03 / WHAT WE DO</p><h2>From first sketch<br>to <em>final detail.</em></h2></div><p>One considered process, from initial survey to completed space.</p></div>
+      <div class="service-list">
+        <article><span>01</span><h3>Architecture</h3><p>Concept design, planning, and architectural documentation.</p><span class="service-mark">↗</span></article>
+        <article><span>02</span><h3>Interior design</h3><p>Material palettes, lighting, furniture, and spatial experience.</p><span class="service-mark">↗</span></article>
+        <article><span>03</span><h3>Survey & planning</h3><p>Site analysis, project requirements, and feasibility studies.</p><span class="service-mark">↗</span></article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacts">
+      <div class="contact-copy"><p class="eyebrow light">04 / YOUR PROJECT</p><h2>Let's make<br>something <em>lasting.</em></h2><p>Tell us a little about your plans. We’ll use these details to prepare for an initial conversation.</p><div class="contact-note">ATELIER NORTH<br>Almaty, Kazakhstan<br>hello@ateliernorth.example</div></div>
+      <form class="contact-form">
+        <label for="name">Name <span>*</span></label>
+        <input id="name" name="name" type="text" placeholder="Your full name" autocomplete="name" required minlength="2">
+        <label for="phone">Phone <span>*</span></label>
+        <input id="phone" name="phone" type="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel" required pattern="[+0-9() -]{7,}">
+        <label for="area">Building area (m²) <span>*</span></label>
+        <input id="area" name="area" type="number" placeholder="e.g. 180" min="1" max="100000" required>
+        <label for="budget">Budget constraints</label>
+        <select id="budget" name="budget">
+          <option value="">Choose a range</option>
+          <option>Under 30 million KZT</option>
+          <option>30–60 million KZT</option>
+          <option>60–100 million KZT</option>
+          <option>100 million KZT+</option>
+          <option>To be discussed</option>
+        </select>
+        <label for="details">A few words about the project</label>
+        <textarea id="details" name="details" rows="3" placeholder="Location, project type, or ideas..."></textarea>
+        <button class="button button-light form-submit" type="submit">Send project brief <span>↗</span></button>
+        <p class="form-status" aria-live="polite"></p>
+        <p class="form-legal">By submitting, you agree that the bureau may contact you about this project.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="logo footer-logo" href="#home">AN<span>.</span></a>
+    <p>Spaces shaped by people and place.</p>
+    <nav aria-label="Footer navigation"><a href="#projects">Projects</a><a href="#services">Services</a><a href="#contacts">Contacts</a></nav>
+    <div class="footer-bottom"><span>© 2026 ATELIER NORTH</span><span>Registration and professional certificates available on request.</span><a href="https://www.archdaily.com/" target="_blank" rel="noreferrer">Professional publications ↗</a><button class="theme-toggle" type="button" aria-pressed="false">Switch to dark theme ◐</button></div>
+  </footer>
+</body>
+</html>
